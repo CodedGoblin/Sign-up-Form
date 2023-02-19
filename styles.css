@@ -1,0 +1,137 @@
+:root{
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: left/contain url("image/sergio-rola-bVM7IO7pt7s-unsplash.jpg");
+}
+
+
+.side{
+    width:35%;
+    height: auto;
+}
+
+.content{
+    background-color: whitesmoke;
+    width: 65%;
+    height: auto;
+}
+
+header{
+    padding: 0px 40px;
+    padding-top: 50px;
+    height: 200px;
+
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+header p:first-child{
+    width: clamp(45ch, 50%, 75ch);
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    background-color: white;
+    padding: 40px 40px;
+    box-shadow: 0px 6px 6px rgb(194, 194, 194);
+}
+
+fieldset{
+    padding: 0;
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 1rem;
+}
+
+form{
+    width: 75%;
+    font-size: 1rem;
+    display: grid;
+    grid-template-areas: "first last"
+                         "email phone"
+                         "pass confirm";
+    gap: 25px;
+}
+
+
+input{
+    padding: 5px 15px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    height: 30px;
+}
+
+input:user-valid{
+    border: 2px solid green;
+    box-shadow: 1px 1px 2px green;
+}
+
+input:user-invalid{
+    border: 2px solid rgb(255, 59, 59);
+    box-shadow: 1px 1px 2px rgb(255, 59, 59);
+}
+
+label{
+    color: rgb(71, 71, 71);
+}
+
+button{
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 12px;
+    color: white;
+    background-color: blueviolet;
+    padding: 15px 50px;
+    transition: translate 0.3s;
+}
+
+button:hover{
+    box-shadow: 0px 3px 5px palevioletred;
+    translate: 0px -3px;
+}
+
+
+main p{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+footer{
+    padding: 40px;
+}
+
+footer a{
+    text-decoration: none;
+    color: blueviolet;
+    font-size: 700;
+}
+
+
+.marquis{
+    color: whitesmoke;
+    margin-top: 20%;
+    height: 30%;
+    background-color: rgba(192, 192, 192, 0.185);
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    height: 80%;
+}

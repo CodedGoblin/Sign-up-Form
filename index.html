@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up to ME!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="side">
+        <div class="marquis"><img src="image/robot-children-metal-svgrepo-com.svg" alt="robot logo"></div>
+    </section>
+    <section class="content">
+        <header>
+            <p>This is not a real online service! You know you need something 
+                like this in your life to help you realize your deepest dreams.
+                <span>Sign up <em>now</em> to get started</span>
+            </p>
+            <p>You know you want to.</p>
+        </header>
+        <main>
+            <h1>Let's do this!</h1>
+            <form action="/signup" id="form1">
+                <fieldset>
+                    <label for="first">FIRST NAME</label>
+                    <input type="text" name="first" id="first" placeholder="first name" required>
+                </fieldset>
+                <fieldset>
+                    <label for="last">LAST NAME</label>
+                    <input type="text" name="last" id="last" placeholder="last name" required>
+                </fieldset>
+                <fieldset>
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email" placeholder="email@service.com" required>
+                </fieldset>
+
+                <fieldset>
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="text" name="phone" id="phone" placeholder="02x xx xx xx" pattern="^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$" required>
+                </fieldset>
+    
+                <fieldset>
+                    <label for="pass">PASSWORD</label>
+                    <input type="password" name="pass" id="pass" placeholder="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" required>
+                </fieldset>
+                <fieldset>
+                    <label for="confirm">CONFIRM PASSWORD</label>
+                    <input type="password" name="confirm" id="confirm" placeholder="confirm password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" required>
+                </fieldset>
+            </form>
+        </main>
+        <footer>
+            <button type="submit" form="form1">Create Account</button>
+            <p>Already have an account? <a href="/login">Log in</a></p>
+        </footer>
+    </section>
+</body>
+</html>
