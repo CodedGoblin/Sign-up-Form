@@ -42,11 +42,12 @@
     
                 <fieldset>
                     <label for="pass">PASSWORD</label>
-                    <input type="password" name="pass" id="pass" placeholder="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" required>
+                    <input type="password" name="pass" id="pass" placeholder="password" pattern="^([a-zA-Z0-9@*#_-]{8,15})$" required>
+                    <p class="error"></p>
                 </fieldset>
                 <fieldset>
                     <label for="confirm">CONFIRM PASSWORD</label>
-                    <input type="password" name="confirm" id="confirm" placeholder="confirm password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" required>
+                    <input type="password" name="confirm" id="confirm" placeholder="confirm password" required>
                 </fieldset>
             </form>
         </main>
@@ -55,5 +56,7 @@
             <p>Already have an account? <a href="/login">Log in</a></p>
         </footer>
     </section>
+
+    <script src="app.js"></script>
 </body>
 </html>
